@@ -22,7 +22,7 @@ jobs:
         os:
           - {runner: windows-latest, preset: win}
           - {runner: macos-latest, preset: mac}
-          - {runner: linux-latest, preset: linux}
+          - {runner: ubuntu-latest, preset: linux}
         build_type: [Debug, Release]
 
     runs-on: ${{ matrix.os.runner }}
